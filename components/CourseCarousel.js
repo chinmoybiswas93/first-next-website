@@ -72,8 +72,8 @@ const courses = [
 
 export default function CourseCarousel() {
   var settings = {
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -105,7 +105,7 @@ export default function CourseCarousel() {
     ],
   };
   return (
-    <div className="mt-8">
+    <div className="mt-8 courses-carousel">
       <Slider {...settings}>
         {courses.map((course, index) => {
           return (

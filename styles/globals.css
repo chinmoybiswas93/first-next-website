@@ -18,6 +18,38 @@ body {
   font-family: "Hind Siliguri", sans-serif;
 }
 
+.heading {
+  font-size: 26px;
+  color: var(--secondary);
+  font-weight: 700;
+}
+.subheading {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.text-desc {
+  font-size: 15px;
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .heading {
+    font-size: 40px;
+  }
+  .subheading {
+    font-size: 18px;
+  }
+  .text-desc {
+    font-size: 16px;
+  }
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
 }
@@ -41,8 +73,9 @@ body {
   background: var(--secondary);
 }
 
-.slick-prev:before,
-.slick-next:before {
+.course-tab-list .slick-prev:before,
+.course-tab-list .slick-next:before {
+  content: "" !important;
   opacity: 0.75;
   color: black !important;
 }
@@ -59,4 +92,32 @@ body {
 .course-tab-list .slick-track {
   border-bottom: 1px solid var(--border);
   margin-bottom: 2px;
+}
+
+.courses-carousel .slick-prev:before {
+  content: url("/images/left arrow.svg");
+}
+.courses-carousel .slick-next:before {
+  content: url("/images/right arrow.svg");
+}
+
+.courses-carousel .slick-prev {
+  left: -10px;
+}
+.courses-carousel .slick-next {
+  right: -10px;
+}
+
+@media (min-width: 768px) {
+  .courses-carousel .slick-prev {
+    left: -25px;
+  }
+  .courses-carousel .slick-next {
+    right: -25px;
+  }
+}
+
+.testimonial-slider .slick-slide.slick-center .content {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
 }

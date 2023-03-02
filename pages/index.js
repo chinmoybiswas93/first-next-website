@@ -1,16 +1,18 @@
 import Courses from "@/components/Courses";
-import CoursesWithTabSlider from "@/components/CoursesWithTabSlider";
 import Hero from "@/components/Hero";
-import SimpleSlider from "@/components/ReactSlick";
+import LiveSeminar from "@/components/LiveSeminar";
 import Services from "@/components/Services";
+import CenterSlider from "@/components/SlideCenter";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <>
       <Hero></Hero>
       <Services></Services>
-      {/* <Courses></Courses> */}
-      <CoursesWithTabSlider></CoursesWithTabSlider>
+      <Courses></Courses>
+      <LiveSeminar></LiveSeminar>
+      <Testimonials></Testimonials>
     </>
   );
 }

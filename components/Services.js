@@ -32,13 +32,13 @@ export default function Services() {
     <section className="bg-orangeBg">
       <div className="lg:container px-4 lg:px-0 mx-auto grid lg:grid-cols-2 grid-col-1 lg:py-20 py-16 items-center">
         <div className="text-center lg:text-left">
-          <h3 className="text-[16px] md:text-[18px] font-medium text-text">
+          <h3 className="subheading">
             আমাদের সুবিধা সমূহ
           </h3>
-          <h2 className="xl:text-[40px] md:text-[36px] text-[32px] font-bold lg:text-left text-secondary my-3 leading-normal">
+          <h2 className="heading lg:text-left my-3 leading-normal">
             জেআইটির বিশেষ সেবা
           </h2>
-          <p className="lg:w-8/12 w-11/12 md:w-10/12 mx-auto lg:mx-0 text-center text-text lg:text-left mb-5">
+          <p className="text-desc lg:w-8/12 w-11/12 md:w-10/12 mx-auto lg:mx-0 text-center text-text lg:text-left mb-5">
             কেবল ক্লাস নয়, জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে,
             যেকোনো সময়। তাই উন্নতমানের কোর্সের সাথে আপনি পাচ্ছেন কিছু বোনাস
             সুবিধা, যা শুধুমাত্র আমরাই দিয়ে থাকি।

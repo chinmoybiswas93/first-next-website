@@ -1,0 +1,85 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "ব্যাসিক স্কিল"
+    },
+    {
+      "id": "2",
+      "name": "ডিজাইন এন্ড মাল্টিমিডিয়া"
+    },
+    {
+      "id": "3",
+      "name": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট"
+    },
+    {
+      "id": "4",
+      "name": "ডিজিটাল মার্কেটিং"
+    }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "category": "1",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "2",
+      "category": "1",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "3",
+      "category": "1",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "4",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "5",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "6",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "1",
+      "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    }
+  ]
+}

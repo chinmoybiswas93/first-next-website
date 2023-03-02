@@ -28,7 +28,7 @@ export default function CourseLoop({ course }) {
         </div>
         <div className="items-center grid grid-cols-2">
           <div>
-            <p className="font-semibold text-[24px]"> {course.price}</p>
+            <p className="font-semibold text-[24px]">৳ {course.price}</p>
           </div>
           <div className="text-right">
             <a

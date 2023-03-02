@@ -17,6 +17,7 @@ module.exports = {
         secondary: "#001d48",
         orangeBg: "#fff8f5",
         text: "#575757",
+        white: "#ffffff"
       },
     },
     container: {
