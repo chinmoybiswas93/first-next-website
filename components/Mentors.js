@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Slider from "react-slick";
-import styles from "../styles/Testimonials.module.css";
-
+import styles from "../styles/Mentors.module.css";
 const testimonials = [
   {
     id: "1",
@@ -59,8 +58,8 @@ const testimonials = [
   },
 ];
 
-export default function Testimonials() {
-  var settings = {
+export default function Mentors() {
+  const settings = {
     dots: true,
     arrows: false,
     className: "slick-center",
@@ -98,50 +97,38 @@ export default function Testimonials() {
     ],
   };
   return (
-    <section>
+    <section className="bg-orangeBg">
       <div className="lg:container px-4 lg:px-0 mx-auto lg:py-20 py-16 items-center">
-        <div className="text-center lg:text-left">
+        <div className="text-center">
           <h2 className="heading text-center my-3 leading-normal">
-            ক্যারিয়ারে সফল যারা
+            এক্সপার্ট মেন্টর
           </h2>
-          <p className="text-desc lg:w-8/12 w-11/12 md:w-10/12 mx-auto text-center text-text mb-5">
-            আমাদের শিক্ষার্থীদের সফলতা, জেআইটি ইন্সটিটিউটের এগিয়ে চলায় উদ্দীপনা
-            যোগায় প্রতিটি মুহূর্তে।
+          <p className="text-desc lg:w-6/12 w-11/12 md:w-10/12 mx-auto text-text mb-5">
+            স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, লাইভে! বাংলাদেশের
+            দক্ষ জনশক্তির বিপ্লবে আমাদের সাথে অংশ নিতে চাইলে জয়েন করুন দেশ সেরা
+            ইন্সট্রাক্টরদের টিমে, শেয়ার করুন আপনার স্কিল।
           </p>
         </div>
         <div className="mt-8">
-        <Slider {...settings} className="testimonial-slider">
-          {testimonials.map((testimonial, index) => {
-            return (
-              <div key={index} className={styles.item}>
-                <div className="content">
-                  <div className="flex items-center max-[400px]:flex-col">
-                    <Image
-                      className="border rounded-full"
-                      src={`/images/${testimonial?.image}`}
-                      height={"80"}
-                      width={"80"}
-                    ></Image>
-                    <div className="ml-4 max-[400px]:ml-0 max-[400px]:text-center max-[400px]:mt-3">
-                      <h3 className="text-[18px] text-secondary font-semibold max-[400px]:flex-col">
-                        {testimonial?.name}
-                      </h3>
-                      <p className="text-text">{testimonial?.course}</p>
-                      <p className="text-text">{testimonial?.batch}</p>
+          <Slider {...settings} className="testimonial-slider">
+            {testimonials.map((testimonial, index) => {
+              return (
+                <div key={index} className={styles.item}>
+                  <div className="content">
+                    <div>
+                      <Image
+                        className="border rounded-full"
+                        src={`/images/${testimonial?.image}`}
+                        height={"80"}
+                        width={"80"}
+                      ></Image>
                     </div>
                   </div>
-                  <div className="mt-4 px-2 max-[400px]:text-center">
-                    <p className="text-desc text-text">
-                      {testimonial.description}
-                    </p>
-                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </Slider>
+              );
+            })}
+          </Slider>
         </div>
-
       </div>
     </section>
   );
