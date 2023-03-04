@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "styles/CoursesLoop.module.css";
 
 export default function CourseLoop({ course }) {
@@ -31,12 +32,12 @@ export default function CourseLoop({ course }) {
             <p className="font-semibold text-[24px]">৳ {course.price}</p>
           </div>
           <div className="text-right">
-            <a
-              href=""
+            <Link
+              href={`course/${course.id}`}
               className="border rounded-md py-1 px-5 text-text hover:bg-primary hover:text-white"
             >
               বিস্তারিত
-            </a>
+            </Link>
           </div>
         </div>
       </div>

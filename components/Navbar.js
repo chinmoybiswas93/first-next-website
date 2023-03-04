@@ -85,7 +85,7 @@ export default function Navbar() {
         <MobileNav open={open} setOpen={setOpen} />
         <div className="w-3/12 flex items-center">
           <a href="/">
-            <Image src="images/Logo.svg" alt="logo" height="88" width="160" />
+            <Image src="/images/Logo.svg" alt="logo" height="88" width="160" />
           </a>
         </div>
         <div className="w-9/12 flex justify-end items-center">

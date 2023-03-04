@@ -110,9 +110,7 @@ export default function CourseCarousel() {
         {courses.map((course, index) => {
           return (
             <div key={index}>
-              <Tab>
                 <CourseLoop course={course}></CourseLoop>
-              </Tab>
             </div>
           );
         })}

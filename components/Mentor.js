@@ -5,43 +5,43 @@ const mentors = [
   {
     id: "1",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "2",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "3",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "4",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "5",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "6",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
   {
     id: "7",
     name: "চিন্ময় বিশ্বাস",
-    course: "ওয়েব ডেভেলপমেন্ট", 
+    course: "ওয়েব ডেভেলপমেন্ট",
     image: "mentor1.png",
   },
 ];
@@ -108,17 +108,20 @@ export default function Mentors() {
                   <div className="relative">
                     <div>
                       <Image
-                        className="border rounded"
+                        className="rounded-lg"
                         src={"/images/mentor1.png"}
                         height={"80"}
                         width={"300"}
                       ></Image>
                     </div>
                     <div className="text-center absolute bottom-4 block w-full">
-                      <h3 className="text-md md:text-xl lg:text-2xl font-bold text-white">{mentor.name}</h3>
-                      <p className="text-sm md:text-md lg: text-xl text-white">{mentor.course}</p>
+                      <h3 className="text-md md:text-xl lg:text-2xl font-bold text-white">
+                        {mentor.name}
+                      </h3>
+                      <p className="text-sm md:text-md lg: text-xl text-white">
+                        {mentor.course}
+                      </p>
                     </div>
-
                   </div>
                 </div>
               );

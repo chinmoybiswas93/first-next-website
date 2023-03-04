@@ -10,3 +10,11 @@
     max-height: 100%;
     text-align: center;
 } */
+
+.links li a {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+.links li {
+    margin-bottom: 10px;
+}
