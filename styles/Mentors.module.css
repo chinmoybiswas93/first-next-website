@@ -1,11 +1,12 @@
 .item {
     padding: 10px;
+    /* background-color: red; */
   }
   .item > div {
-    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1); */
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
     transition: 0.3s ease-in-out;
   }
   
