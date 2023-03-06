@@ -5,38 +5,38 @@ import { Tab } from "@headlessui/react";
 import styles from "../styles/Courses.module.css";
 import CourseCarousel from "./CourseCarousel";
 
-const categories = [
-  {
-    id: "1",
-    name: "সকল কোর্স",
-  },
-  {
-    id: "2",
-    name: "ব্যাসিক স্কিল",
-  },
-  {
-    id: "3",
-    name: "ডিজাইন এন্ড মাল্টিমিডিয়া",
-  },
-  {
-    id: "4",
-    name: "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
-  },
-  {
-    id: "5",
-    name: "ডিজিটাল মার্কেটিং",
-  },
-  {
-    id: "6",
-    name: "ব্যাসিক স্কিল",
-  },
-  {
-    id: "7",
-    name: "ডিজাইন এন্ড মাল্টিমিডিয়া",
-  },
-];
+// const categories = [
+//   {
+//     id: "1",
+//     name: "সকল কোর্স",
+//   },
+//   {
+//     id: "2",
+//     name: "ব্যাসিক স্কিল",
+//   },
+//   {
+//     id: "3",
+//     name: "ডিজাইন এন্ড মাল্টিমিডিয়া",
+//   },
+//   {
+//     id: "4",
+//     name: "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
+//   },
+//   {
+//     id: "5",
+//     name: "ডিজিটাল মার্কেটিং",
+//   },
+//   {
+//     id: "6",
+//     name: "ব্যাসিক স্কিল",
+//   },
+//   {
+//     id: "7",
+//     name: "ডিজাইন এন্ড মাল্টিমিডিয়া",
+//   },
+// ];
 
-export default function Courses() {
+export default function Courses({categories}) {
   var settings = {
     dots: false,
     arrows: true,
@@ -75,7 +75,7 @@ export default function Courses() {
               {categories.map((category, index) => {
                 return (
                   <Tab.Panel className={"tab-panel-content"} key={index}>
-                    <CourseCarousel></CourseCarousel>
+                    <CourseCarousel category={category}></CourseCarousel>
                   </Tab.Panel>
                 );
               })}

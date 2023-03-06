@@ -1,40 +1,38 @@
 import Image from "next/image";
 
-const services = [
-  {
-    title: "এক্সপার্ট ইন্সট্রাক্টর",
-    description:
-      "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
-    icon: "instructor-icon.svg",
-  },
-  {
-    title: "সার্টিফিকেট প্রদান",
-    description:
-      "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
-    icon: "certificate-icon.svg",
-  },
-  {
-    title: "ক্লাস ভিডিও",
-    description:
-      "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
-    icon: "class video icon.svg",
-  },
-  {
-    title: "24/7 সাপোর্ট ",
-    description:
-      "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
-    icon: "support icon.svg",
-  },
-];
+// const services = [
+//   {
+//     title: "এক্সপার্ট ইন্সট্রাক্টর",
+//     description:
+//       "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+//     icon: "instructor-icon.svg",
+//   },
+//   {
+//     title: "সার্টিফিকেট প্রদান",
+//     description:
+//       "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+//     icon: "certificate-icon.svg",
+//   },
+//   {
+//     title: "ক্লাস ভিডিও",
+//     description:
+//       "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+//     icon: "class video icon.svg",
+//   },
+//   {
+//     title: "24/7 সাপোর্ট ",
+//     description:
+//       "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+//     icon: "support icon.svg",
+//   },
+// ];
 
-export default function Services() {
+export default function Services({ services }) {
   return (
     <section className="bg-orangeBg">
       <div className="lg:container px-4 lg:px-0 mx-auto grid lg:grid-cols-2 grid-col-1 lg:py-20 py-16 items-center">
         <div className="text-center lg:text-left">
-          <h3 className="subheading">
-            আমাদের সুবিধা সমূহ
-          </h3>
+          <h3 className="subheading">আমাদের সুবিধা সমূহ</h3>
           <h2 className="heading lg:text-left my-3 leading-normal">
             জেআইটির বিশেষ সেবা
           </h2>
@@ -77,7 +75,7 @@ export default function Services() {
                 <div className="py-6 px-8">
                   <div className="flex items-center mb-5">
                     <Image
-                      src={`images/${service.icon}`}
+                      src={`/images/${service.icon}`}
                       height={"28"}
                       width={"28"}
                       alt="insturctor icon"
@@ -90,7 +88,7 @@ export default function Services() {
                   <div className="text-right">
                     <button>
                       <Image
-                        src={"images/arrow.svg"}
+                        src={"/images/arrow.svg"}
                         height={"10"}
                         width={"20"}
                         alt="arrow icon"

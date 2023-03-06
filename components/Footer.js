@@ -25,6 +25,7 @@ export default function Footer() {
                   src={"/images/footer-socials (1).png"}
                   width={"30"}
                   height={"30"}
+                  alt="footer icon"
                 ></Image>
               </button>
               <button className="hover:scale-[1.1] transition-all">
@@ -32,6 +33,7 @@ export default function Footer() {
                   src={"/images/footer-socials (2).png"}
                   width={"30"}
                   height={"30"}
+                  alt="footer icon"
                 ></Image>
               </button>
               <button className="hover:scale-[1.1] transition-all">
@@ -39,6 +41,7 @@ export default function Footer() {
                   src={"/images/footer-socials (3).png"}
                   width={"30"}
                   height={"30"}
+                  alt="footer icon"
                 ></Image>
               </button>
               <button className="hover:scale-[1.1] transition-all">
@@ -46,12 +49,13 @@ export default function Footer() {
                   src={"/images/footer-socials (4).png"}
                   width={"30"}
                   height={"30"}
+                  alt="footer icon"
                 ></Image>
               </button>
             </div>
           </div>
         </div>
-        <div className="text-center lg:text-start">
+        <div className="text-center lg:text-start lg:pl-8">
           <h3 className="text-secondary text-lg font-bold mb-4">কুইক লিঙ্ক</h3>
           <ul className={styles.links}>
             <li>
@@ -74,7 +78,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="text-center lg:text-start">
+        <div className="text-center lg:text-start lg:pl-8">
           <h3 className="text-secondary text-lg font-bold mb-4">অন্যান্য</h3>
           <ul className={styles.links}>
             <li>
@@ -97,7 +101,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="text-center lg:text-start">
+        <div className="text-center lg:text-start lg:pl-8F">
           <h3 className="text-secondary text-lg font-bold mb-4">যোগাযোগ</h3>
           <ul className={styles.links}>
             <li className="flex items-start justify-center lg:justify-start">

@@ -7,12 +7,16 @@ import Services from "@/components/Services";
 import SuccessStories from "@/components/SuccessStories";
 import Testimonials from "@/components/Testimonials";
 
-export default function Home() {
+export default function Home({ services, categories, courses }) {
+  // const { services, categories, courses } = props;
+  // console.log(services);
+  // console.log(categories);
+  // console.log(courses);
   return (
     <>
       <Hero></Hero>
-      <Services></Services>
-      <Courses></Courses>
+      <Services services={services}></Services>
+      <Courses categories={categories}></Courses>
       <LiveSeminar></LiveSeminar>
       <Testimonials></Testimonials>
       <SuccessStories></SuccessStories>
@@ -20,4 +24,29 @@ export default function Home() {
       <Faq></Faq>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const urls = [
+    "http://localhost:4000/services",
+    "http://localhost:4000/categories",
+    "http://localhost:4000/courses",
+  ];
+
+  const data = await Promise.all(
+    urls.map(async (url) => {
+      const res = await fetch(url);
+      const dataJson = await res.json();
+      return dataJson;
+    })
+  );
+
+  // console.log(data);
+  return {
+    props: {
+      services: data[0],
+      categories: data[1],
+      courses: data[2],
+    },
+  };
 }

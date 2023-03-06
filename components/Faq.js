@@ -50,8 +50,8 @@ export default function Faq() {
           <Accordion collapseAll={true} className="border-none">
             {faqs.map((faq, index) => {
               return (
-                <Accordion.Panel className="hover:bg-white">
-                  <Accordion.Title className="text-lg hover:bg-white foucs:shadow-none text-secondary font-[600] bg-white border-b-1">{index+1}. {faq.question}</Accordion.Title>
+                <Accordion.Panel className="hover:bg-white" key={index}>
+                  <Accordion.Title className="text-lg hover:bg-white foucs:ring-0 text-secondary font-[600] bg-white border-b-1">{index+1}. {faq.question}</Accordion.Title>
                   <Accordion.Content>
                     <p className="mb-2 text-text">
                       {faq.answer}

@@ -1,10 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "styles/CoursesLoop.module.css";
 
 export default function CourseLoop({ course }) {
+  const router = useRouter();
+  const goToCourseDetails = () => {
+    router.push(`course/${course.id}`);
+  };
   return (
-    <div className={styles.loopItem}>
+    <div onClick={() => goToCourseDetails()} className={styles.loopItem}>
       <div className={styles.item}>
         <Image
           className="rounded-[10px]"

@@ -29,7 +29,7 @@ function MobileNav({ open, setOpen }) {
       <div className="drop-shadow-md flex items-center justify-start filter bg-white">
         <div className="w-3/12 flex items-center py-4 pl-4">
           <a href="/">
-            <Image src="images/Logo.svg" alt="Logo" width="180" height="88" />
+            <Image src="/images/Logo.svg" alt="Logo" width="180" height="88" />
           </a>
         </div>
       </div>

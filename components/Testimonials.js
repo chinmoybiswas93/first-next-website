@@ -121,6 +121,7 @@ export default function Testimonials() {
                       src={`/images/${testimonial?.image}`}
                       height={"80"}
                       width={"80"}
+                      alt="testimonials image"
                     ></Image>
                     <div className="ml-4 max-[400px]:ml-0 max-[400px]:text-center max-[400px]:mt-3">
                       <h3 className="text-[18px] text-secondary font-semibold max-[400px]:flex-col">

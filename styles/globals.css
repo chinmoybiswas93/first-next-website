@@ -130,3 +130,13 @@ body {
 .slick-dots li button:before {
   font-size: 8px !important;
 }
+
+div[data-testid="flowbite-accordion"] > button:focus {
+  box-shadow: none;
+}
+
+.loading-spinner {
+  fill: var(--primary) !important;
+  width: 2rem;
+  height: 2rem;
+}

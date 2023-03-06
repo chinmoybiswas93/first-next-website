@@ -112,6 +112,7 @@ export default function Mentors() {
                         src={"/images/mentor1.png"}
                         height={"80"}
                         width={"300"}
+                        alt="mentor image"
                       ></Image>
                     </div>
                     <div className="text-center absolute bottom-4 block w-full">

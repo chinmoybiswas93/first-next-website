@@ -1,5 +1,47 @@
 {
+  "services": [
+    {
+      "title": "এক্সপার্ট ইন্সট্রাক্টর",
+      "description": "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+      "icon": "instructor-icon.svg"
+    },
+    {
+      "title": "সার্টিফিকেট প্রদান",
+      "description": "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+      "icon": "certificate-icon.svg"
+    },
+    {
+      "title": "ক্লাস ভিডিও",
+      "description": "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+      "icon": "class video icon.svg"
+    },
+    {
+      "title": "24/7 সাপোর্ট ",
+      "description": "কেবল ক্লাস নয়,  জেআইটি সবসময় প্রস্তুত শিক্ষার্থীদের যেকোনো দরকারে, যেকোনো সময়। ",
+      "icon": "support icon.svg"
+    }
+  ],
   "categories": [
+    {
+      "id": "",
+      "name": "সকল কোর্স "
+    },
+    {
+      "id": "1",
+      "name": "ব্যাসিক স্কিল"
+    },
+    {
+      "id": "2",
+      "name": "ডিজাইন এন্ড মাল্টিমিডিয়া"
+    },
+    {
+      "id": "3",
+      "name": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট"
+    },
+    {
+      "id": "4",
+      "name": "ডিজিটাল মার্কেটিং"
+    },
     {
       "id": "1",
       "name": "ব্যাসিক স্কিল"
@@ -47,18 +89,18 @@
     },
     {
       "id": "4",
-      "category": "2",
-      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
-      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "category": "1",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
       "instructor": "সোহানুর রহমান খান",
       "price": "৬,০০০",
       "thumb": "course-img.png"
     },
     {
       "id": "5",
-      "category": "2",
-      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
-      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "category": "1",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
       "instructor": "সোহানুর রহমান খান",
       "price": "৬,০০০",
       "thumb": "course-img.png"
@@ -73,8 +115,125 @@
       "thumb": "course-img.png"
     },
     {
-      "id": "1",
+      "id": "7",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "8",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "9",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "10",
+      "category": "2",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "11",
       "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "12",
+      "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "13",
+      "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "14",
+      "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "15",
+      "category": "3",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন",
+      "categoryName": "ব্যাসিক স্কিল",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "16",
+      "category": "4",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "17",
+      "category": "4",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "18",
+      "category": "4",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ডিজাইন এন্ড মাল্টিমিডিয়া",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "19",
+      "category": "4",
+      "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
+      "categoryName": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
+      "instructor": "সোহানুর রহমান খান",
+      "price": "৬,০০০",
+      "thumb": "course-img.png"
+    },
+    {
+      "id": "20",
+      "category": "4",
       "title": "মাইক্রোসফট অফিস এপ্লিকেশন ",
       "categoryName": "ওয়েব ডিজাইন এন্ড ডেভেলপমেন্ট",
       "instructor": "সোহানুর রহমান খান",

@@ -31,7 +31,7 @@ export default function LiveSeminar() {
     <section className="bg-orangeBg">
       <div className="lg:container px-4 lg:px-0 mx-auto grid md:grid-cols-2 grid-col-1 lg:py-20 py-16 items-center">
         <div className="mb-8 px-4 ">
-          <Image src={"/images/Live Seminar.svg"} width={'500'} height={'500'} alt=""></Image>
+          <Image src={"/images/Live Seminar.svg"} width={'500'} height={'500'} alt="live seminar"></Image>
         </div>
         <div className="text-center md:text-left pl-8">
           <h3 className="subheading font-medium text-text">

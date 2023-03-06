@@ -3,74 +3,104 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Tab } from "@headlessui/react";
 import CourseLoop from "./CourseLoop";
+import { useEffect, useState } from "react";
+import { Spinner } from "flowbite-react";
 
-const courses = [
-  {
-    id: "1",
-    category: "1",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
-    courseCategory: "ব্যাসিক স্কিল",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "2",
-    category: "1",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন",
-    courseCategory: "ব্যাসিক স্কিল",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "3",
-    category: "1",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন",
-    courseCategory: "ব্যাসিক স্কিল",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "4",
-    category: "2",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
-    courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "5",
-    category: "2",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
-    courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "6",
-    category: "2",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
-    courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-  {
-    id: "1",
-    category: "3",
-    title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
-    courseCategory: "ব্যাসিক স্কিল",
-    instructor: "সোহানুর রহমান খান",
-    price: "৬,০০০",
-    thumb: "course-img.png",
-  },
-];
+// const courses = [
+//   {
+//     id: "1",
+//     category: "1",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
+//     courseCategory: "ব্যাসিক স্কিল",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "2",
+//     category: "1",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন",
+//     courseCategory: "ব্যাসিক স্কিল",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "3",
+//     category: "1",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন",
+//     courseCategory: "ব্যাসিক স্কিল",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "4",
+//     category: "2",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
+//     courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "5",
+//     category: "2",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
+//     courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "6",
+//     category: "2",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
+//     courseCategory: "ডিজাইন এন্ড মাল্টিমিডিয়া",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+//   {
+//     id: "1",
+//     category: "3",
+//     title: "মাইক্রোসফট অফিস এপ্লিকেশন ",
+//     courseCategory: "ব্যাসিক স্কিল",
+//     instructor: "সোহানুর রহমান খান",
+//     price: "৬,০০০",
+//     thumb: "course-img.png",
+//   },
+// ];
 
-export default function CourseCarousel() {
+export default function CourseCarousel({ category }) {
+  console.log(category);
+
+  fetch;
+
+  const [courses, setCourses] = useState([]);
+  const [loading, setLoading] = useState([false]);
+
+  // Course Data fetch
+  useEffect(() => {
+    if (category.id == "") {
+      setLoading(true);
+      fetch("http://localhost:4000/courses")
+        .then((res) => res.json())
+        .then((data) => {
+          setCourses(data);
+          setLoading(false);
+        });
+    } else {
+      fetch(`http://localhost:4000/courses?category=${category.id}`)
+        .then((res) => res.json())
+        .then((data) => {
+          setCourses(data);
+          setLoading(false);
+        });
+    }
+  }, []);
+
+  // slider settings
   var settings = {
     dots: false,
     arrows: true,
@@ -106,15 +136,24 @@ export default function CourseCarousel() {
   };
   return (
     <div className="mt-8 courses-carousel">
-      <Slider {...settings}>
-        {courses.map((course, index) => {
-          return (
-            <div key={index}>
+      {loading ? (
+        <div className="flex items-center justify-center">
+          <Spinner
+            className="loading-spinner"
+            aria-label="Center-aligned spinner"
+          />
+        </div>
+      ) : (
+        <Slider {...settings}>
+          {courses.map((course, index) => {
+            return (
+              <div key={index}>
                 <CourseLoop course={course}></CourseLoop>
-            </div>
-          );
-        })}
-      </Slider>
+              </div>
+            );
+          })}
+        </Slider>
+      )}
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Hero() {
           <div className="flex items-center md:justify-start justify-center">
             <Image
               className="inline mr-2"
-              src={"images/tik-icon.svg"}
+              src={"/images/tik-icon.svg"}
               width={"22"}
               height={"22"}
               alt="tik-icon"
@@ -35,7 +35,7 @@ export default function Hero() {
             <button className="flex items-center py-2 font-medium text-secondary">
               <Image
                 className="mr-2"
-                src={"images/play button.svg"}
+                src={"/images/play button.svg"}
                 alt="play-icon"
                 width={"30"}
                 height={"30"}
@@ -48,7 +48,7 @@ export default function Hero() {
           {" "}
           <Image
             className="md:ml-auto mx-auto mt-12 md:mt-0 w-10/12"
-            src={"images/Hero Image.svg"}
+            src={"/images/Hero Image.svg"}
             alt="hero image"
             width={"600"}
             height={"100"}
