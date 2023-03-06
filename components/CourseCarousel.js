@@ -74,7 +74,7 @@ import { Spinner } from "flowbite-react";
 
 export default function CourseCarousel({ category }) {
   const [courses, setCourses] = useState([]);
-  const [loading, setLoading] = useState([false]);
+  const [loading, setLoading] = useState(false);
 
   // Course Data fetch
   useEffect(() => {
@@ -131,7 +131,7 @@ export default function CourseCarousel({ category }) {
     ],
   };
   return (
-    <div className="mt-8 courses-carousel">
+    <div className="courses-carousel">
       {loading ? (
         <div className="flex items-center justify-center">
           <Spinner

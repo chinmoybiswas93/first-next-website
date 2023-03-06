@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import { Tab } from "@headlessui/react";
 import styles from "../styles/Courses.module.css";
 import CourseCarousel from "./CourseCarousel";
+import Link from "next/link";
 
 // const categories = [
 //   {
@@ -36,7 +37,7 @@ import CourseCarousel from "./CourseCarousel";
 //   },
 // ];
 
-export default function Courses({categories}) {
+export default function Courses({ categories }) {
   var settings = {
     dots: false,
     arrows: true,
@@ -58,7 +59,7 @@ export default function Courses({categories}) {
             অনলাইন বা অফলাইন কোর্সে এনরোল করতে পারবেন যেকোনো সময়।
           </p>
         </div>
-        <div className="mt-8">
+        <div className="mt-12">
           <Tab.Group>
             <Tab.List className="px-6 course-tab-list">
               <Slider className="px-3" {...settings}>
@@ -71,7 +72,7 @@ export default function Courses({categories}) {
                 })}
               </Slider>
             </Tab.List>
-            <Tab.Panels className={"tab-panel mt-8"}>
+            <Tab.Panels className={"tab-panel mt-4"}>
               {categories.map((category, index) => {
                 return (
                   <Tab.Panel className={"tab-panel-content"} key={index}>
@@ -81,6 +82,14 @@ export default function Courses({categories}) {
               })}
             </Tab.Panels>
           </Tab.Group>
+        </div>
+        <div className="text-center mt-8">
+          <Link
+            href={"/courses"}
+            className="bg-secondary hover:bg-primary px-5 py-2 rounded-md text-white mr-4 font-medium text-center"
+          >
+            সকল কোর্স সমূহ দেখুন
+          </Link>
         </div>
       </div>
     </section>
