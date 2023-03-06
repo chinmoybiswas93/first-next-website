@@ -73,10 +73,6 @@ import { Spinner } from "flowbite-react";
 // ];
 
 export default function CourseCarousel({ category }) {
-  console.log(category);
-
-  fetch;
-
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState([false]);
 
